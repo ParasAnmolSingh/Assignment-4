@@ -1,0 +1,20 @@
+import random
+i=0
+
+
+while i<10:
+    i+=1
+    a=random. randint(1,20)
+    b=random. randint (1,10)
+    print (f"Question {i}: \n{a} × {b} =  ") 
+    ans=input ()
+    try :
+     ans=float (ans) 
+     if ans==a*b: 
+       print ("Right!\n")
+     else:
+       print (f"it's a wrong answer!" )
+       print (f"correct answer = {a*b}\n")
+    except:
+      print (f"it's a wrong answer!" )
+      print (f"correct answer = {a*b}\n")
