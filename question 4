@@ -1,0 +1,35 @@
+#n%5=2
+#n%6=3
+#n%7=2
+#n<200
+#find n
+i=5
+arr=[]
+while (i<8):
+  print (f"If the candy is distributed evenly among {i} people, how many candy would be left over?" )
+  arr. append (int(input ()))
+  i+=1
+set1=[]
+set2=[]
+set3=[]
+
+j=arr[0]
+while j<200:
+  set1. append (j)
+  j+=5
+set1=set(set1)
+k=arr[1]
+while k<200:
+  set2. append (k)
+  k+=6
+set2=set(set2)
+l=arr[2]
+while l<200:
+  set3. append (l)
+  l+=7
+set3=set(set3)
+set4=set1. intersection (set2)
+set5=set3. intersection (set4)
+print ("feasible answers = ",end="" )
+for i in set5:
+   print (i,end="")
