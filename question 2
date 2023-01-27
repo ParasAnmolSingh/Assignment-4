@@ -1,0 +1,11 @@
+n=int(input("enter the year:"))
+if n<=0 :
+  print("invalid year")
+elif n%4==0 and n%100==0 and n%400>0 : #this is for years greater than 100
+  print("it is not a leap year")  
+elif n%100==0 and n%400==0 : #this is for the century years
+  print ("it is a leap year ")
+elif n%4==0 :  #this is for years less than 100              #in if else it depends which condition you wrote first.
+  print("it is a leap year")   
+else :
+  print("it is not a leap year")       
